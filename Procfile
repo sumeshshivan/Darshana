@@ -1,0 +1,1 @@
+web: gunicorn darsana.wsgi --log-file -
