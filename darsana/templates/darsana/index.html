@@ -1,33 +1,6 @@
+{% extends "darsana/base.html" %}
 {% load static from staticfiles %}
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Darsana International | Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="{% static 'assets/js/ie/html5shiv.js' %} "></script><![endif]-->
-		<link href="{% static 'assets/css/main.css' %} " rel="stylesheet">
-		<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-		<!--[if lte IE 8]><link rel="stylesheet" href="{% static 'assets/css/ie8.css' %} " /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="{% static 'assets/css/ie9.css' %} " /><![endif]-->
-	</head>
-	<body class="index">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<header id="header" class="alt">
-					<h1 id="logo"><a href="/">Darsana <span>International</span></a></h1>
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="index.html">Contact</a></li>
-							<li class="submenu">
-								<a href="#">Find Us on Map</a>
-							</li>
-							<li><a href="#" class="button special">Call Us</a></li>
-						</ul>
-					</nav>
-				</header>
-
+{% block main %}
 			<!-- Banner -->
 				<section id="banner">
 
@@ -40,7 +13,7 @@
 					<div class="inner">
 
 						<header>
-							<h2>DARSANA</h2>
+							<h2>DARSHANA</h2>
 							<strong>INTERNATIONAL</strong>
 						</header>
 						<p>
@@ -224,35 +197,4 @@
 					</footer>
 
 				</section>
-
-			<!-- Footer -->
-				<footer id="footer">
-
-					<ul class="icons">
-						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-					</ul>
-
-					<ul class="copyright">
-						<li>&copy; FirstBytes</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-				</footer>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="{% static 'assets/js/jquery.min.js' %} "></script>
-			<script src="{% static 'assets/js/jquery.dropotron.min.js' %} "></script>
-			<script src="{% static 'assets/js/jquery.scrolly.min.js' %} "></script>
-			<script src="{% static 'assets/js/jquery.scrollgress.min.js' %} "></script>
-			<script src="{% static 'assets/js/skel.min.js' %} "></script>
-			<script src="{% static 'assets/js/util.js' %} "></script>
-			<!--[if lte IE 8]><script src="{% static 'assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="{% static 'assets/js/main.js' %} "></script>
-
-	</body>
-</html>
+{% endblock %}
